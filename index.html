@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generate strong, secure passwords with our free online tool. Customize length, characters, and save your history!">
+    <title>Secure Password Generator - Free Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Secure Password Generator</h1>
+        <p>Your go-to tool for strong, unique passwords.</p>
+    </header>
+    
+    <main>
+        <section id="generator">
+            <h2>Create Your Password</h2>
+            <div class="options">
+                <label for="length">Length: <span id="lengthValue">12</span></label>
+                <input type="range" id="length" min="8" max="50" value="12">
+                
+                <label><input type="checkbox" id="uppercase" checked> Uppercase (A-Z)</label>
+                <label><input type="checkbox" id="numbers" checked> Numbers (0-9)</label>
+                <label><input type="checkbox" id="symbols" checked> Symbols (!@#)</label>
+                <label><input type="checkbox" id="excludeSimilar"> Exclude Similar (l, 1, O, 0)</label>
+            </div>
+            <button id="generateBtn">Generate</button>
+            <div id="passwordDisplay"></div>
+            <button id="copyBtn">Copy</button>
+            <div id="strengthIndicator"></div>
+        </section>
+        
+        <section id="history">
+            <h2>Your Password History</h2>
+            <ul id="historyList"></ul>
+            <button id="clearHistoryBtn">Clear History</button>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Our Password Generator. Made with 💙.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
